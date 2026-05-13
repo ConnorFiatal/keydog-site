@@ -133,6 +133,16 @@ img, svg { display: block; }
 }
 .btn-ghost:hover { background: var(--off-white); border-color: var(--border); }
 
+.nav-actions .btn-ghost {
+  color: rgba(255,255,255,.8);
+  border-color: rgba(255,255,255,.22);
+}
+.nav-actions .btn-ghost:hover {
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.4);
+  color: var(--white);
+}
+
 .btn-outline-light {
   background: transparent;
   color: rgba(255,255,255,.92);
@@ -212,20 +222,21 @@ img, svg { display: block; }
 /* ── Hero ───────────────────────────────────────────────────────── */
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-700) 55%, #1a3a6e 100%);
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: var(--inner-w);
   margin-inline: auto;
-  padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 60px);
-  display: flex;
-  align-items: center;
+  padding: clamp(60px, 8vw, 100px) clamp(24px, 5vw, 80px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: clamp(40px, 5vw, 72px);
+  align-items: center;
   min-height: calc(100vh - var(--nav-h));
 }
 
 .hero-inner {
-  flex: 1;
   min-width: 0;
 }
 
@@ -278,8 +289,6 @@ img, svg { display: block; }
 
 /* ── Hero visual / mock browser ─────────────────────────────────── */
 .hero-visual {
-  flex: 1;
-  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -416,7 +425,7 @@ img, svg { display: block; }
 .mock-table-row.short { width: 85%; }
 
 @media (max-width: 900px) {
-  .hero-content { flex-direction: column; text-align: center; }
+  .hero-content { grid-template-columns: 1fr; min-height: auto; text-align: center; }
   .hero-sub { margin-inline: auto; }
   .hero-cta { justify-content: center; }
   .hero-note { text-align: center; }
