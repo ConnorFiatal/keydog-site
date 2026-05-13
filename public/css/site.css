@@ -31,7 +31,7 @@
 
   --nav-h: 68px;
   --section-pad: clamp(72px, 8vw, 120px);
-  --inner-w: 1200px;
+  --inner-w: 1440px;
 }
 
 html { scroll-behavior: smooth; }
@@ -212,21 +212,21 @@ img, svg { display: block; }
 /* ── Hero ───────────────────────────────────────────────────────── */
 .hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-700) 55%, #1a3a6e 100%);
-  min-height: calc(100vh - var(--nav-h));
+}
+
+.hero-content {
+  max-width: var(--inner-w);
+  margin-inline: auto;
+  padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 60px);
   display: flex;
   align-items: center;
-  padding: clamp(60px, 8vw, 100px) clamp(20px, 5vw, 60px);
-  gap: clamp(40px, 6vw, 80px);
-  max-width: 100%;
-  overflow: hidden;
+  gap: clamp(40px, 5vw, 72px);
+  min-height: calc(100vh - var(--nav-h));
 }
 
 .hero-inner {
   flex: 1;
-  max-width: 580px;
-  margin-inline: auto;
-  padding-left: max(0px, calc((100vw - var(--inner-w)) / 2));
-  padding-left: clamp(20px, calc((100vw - 1200px) / 2 + 60px), 9999px);
+  min-width: 0;
 }
 
 .hero-badge {
@@ -279,11 +279,10 @@ img, svg { display: block; }
 /* ── Hero visual / mock browser ─────────────────────────────────── */
 .hero-visual {
   flex: 1;
-  max-width: 580px;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: clamp(20px, 5vw, 60px);
 }
 
 .mock-browser {
@@ -417,12 +416,10 @@ img, svg { display: block; }
 .mock-table-row.short { width: 85%; }
 
 @media (max-width: 900px) {
-  .hero { flex-direction: column; text-align: center; }
-  .hero-inner { padding-left: 0; max-width: none; }
+  .hero-content { flex-direction: column; text-align: center; }
   .hero-sub { margin-inline: auto; }
   .hero-cta { justify-content: center; }
   .hero-note { text-align: center; }
-  .hero-visual { padding-right: 0; }
 }
 
 /* ── Trust bar ──────────────────────────────────────────────────── */
