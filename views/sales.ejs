@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><%- include('partials/head') %></head>
+<body class="page-minimal">
+
+<%- include('partials/nav') %>
+
+<main class="checkout-flow">
+  <div class="checkout-wrap checkout-wrap-narrow">
+    <div class="checkout-card">
+      <div class="section-label">Talk to Sales</div>
+      <h1 class="checkout-title">Let's find the right fit</h1>
+      <p class="checkout-sub">Tell us about your team and we'll walk you through the best plan — or build a custom quote for larger deployments.</p>
+
+      <form action="mailto:sales@keydog.app" method="GET" class="checkout-form">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Work email</label>
+          <input type="email" id="email" name="email" placeholder="jane@yourorg.org" required autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label for="org">Organisation name</label>
+          <input type="text" id="org" name="org" placeholder="City School District" required>
+        </div>
+        <div class="form-group">
+          <label for="size">How many buildings do you manage?</label>
+          <select id="size" name="size">
+            <option value="">Select a range</option>
+            <option>1–5</option>
+            <option>6–20</option>
+            <option>21–50</option>
+            <option>50+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">What are you hoping to solve? <span class="label-optional">(optional)</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="e.g. We lose track of keys during handoffs between shifts…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-full btn-lg">Send message</button>
+      </form>
+
+      <p class="checkout-legal">We reply within one business day. No pitch decks, no pressure.</p>
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

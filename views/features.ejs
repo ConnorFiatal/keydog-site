@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><%- include('partials/head') %></head>
+<body>
+
+<%- include('partials/nav') %>
+
+<!-- ── Page hero ─────────────────────────────────────────────────── -->
+<section class="page-hero page-hero-sm">
+  <div class="section-inner text-center">
+    <div class="section-label">Features</div>
+    <h1 class="page-hero-title">Everything in one place</h1>
+    <p class="page-hero-sub">Physical keys, electronic credentials, doors, staff, and audit records — managed from a single platform built for facilities teams.</p>
+  </div>
+</section>
+
+<!-- ── Summary grid ──────────────────────────────────────────────── -->
+<section class="feat-summary-section">
+  <div class="section-inner">
+    <div class="feat-summary-grid">
+
+      <a href="#keys" class="feat-summary-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+        </div>
+        <h3>Physical Key Tracking</h3>
+        <p>Issue, recover, and track every key from checkout to return.</p>
+      </a>
+
+      <a href="#doors" class="feat-summary-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h3>Door Management</h3>
+        <p>A complete record for every door — hardware, access levels, and history.</p>
+      </a>
+
+      <a href="#fobs" class="feat-summary-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/><path d="M6 10h.01M6 14h12"/></svg>
+        </div>
+        <h3>Fob Profiles</h3>
+        <p>Map electronic access profiles to people, buildings, and zones.</p>
+      </a>
+
+      <a href="#audit" class="feat-summary-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Audit Trail</h3>
+        <p>Tamper-evident log of every action, with timestamps and user attribution.</p>
+      </a>
+
+      <a href="#staff" class="feat-summary-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Staff &amp; Safe Management</h3>
+        <p>Safe combinations, system credentials, and staff access in one secure place.</p>
+      </a>
+
+      <a href="#agreements" class="feat-summary-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        </div>
+        <h3>Key Agreements &amp; Reports</h3>
+        <p>Auto-generated PDF agreements, scheduled reports, and data exports.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Feature detail sections ───────────────────────────────────── -->
+<div class="feat-sections">
+
+  <!-- 1 · Physical Key Tracking — odd: text left, image right -->
+  <section class="feat-section" id="keys">
+    <div class="section-inner">
+      <div class="feat-layout">
+        <div class="feat-text">
+          <div class="section-label">Physical Key Tracking</div>
+          <h2>Every key is an asset. Treat it like one.</h2>
+          <p>Physical keys are the most misplaced access credential in any organization. Without a disciplined system, keys walk out the door and never come back — and nobody knows who had them last. Spreadsheets fail the moment a key changes hands for the second time.</p>
+          <p>KeyDog treats every physical key as a traceable asset with its own record: who holds it, when it was issued, when it is due back, and a full transaction history. When keys go overdue, automated email reminders go out — no manual chasing required.</p>
+          <p>Key rings keep related keys together for users who need a bundle rather than individual keys, such as building custodians, maintenance crews, or site managers. Each ring checkout generates its own record and can require a signed agreement before the keys leave the office.</p>
+          <ul class="feat-bullet-list">
+            <li>Issue and recover keys with a signed digital agreement</li>
+            <li>Ring-based checkout for grouped key bundles</li>
+            <li>Automated overdue alerts via email on a configurable schedule</li>
+            <li>Full per-key transaction history with timestamps and user attribution</li>
+          </ul>
+          <a href="/signup?plan=starter" class="btn btn-navy">Start tracking keys</a>
+        </div>
+        <div class="feat-image">
+          <div class="img-placeholder">
+            <div class="demo-ph-inner">
+              <div class="demo-ph-sidebar">
+                <div class="demo-ph-logo"></div>
+                <div class="demo-ph-nav active"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+              </div>
+              <div class="demo-ph-body">
+                <div class="demo-ph-heading"></div>
+                <div class="demo-ph-form-row" style="width:55%"></div>
+                <div class="demo-ph-rows" style="margin-top:8px">
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                  <div class="demo-ph-row med"></div>
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-ph-label">Key checkout view</div>
+            <span class="img-ph-tag">Demo image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · Door Management — even: image left, text right -->
+  <section class="feat-section" id="doors">
+    <div class="section-inner">
+      <div class="feat-layout">
+        <div class="feat-text">
+          <div class="section-label">Door Management</div>
+          <h2>Know every door. Down to the hardware.</h2>
+          <p>Every door is a policy decision. Which hardware is installed, which access profile applies, what the opening schedule is, and which fob profiles have clearance — these are details that matter for audits, maintenance work orders, and security reviews.</p>
+          <p>KeyDog stores a complete record for every door in your inventory: hardware specifications, access levels, associated fob profiles, notes, and physical location. Your team can answer "who can open this door on weekends" in seconds instead of hunting through a binder.</p>
+          <p>When hardware is replaced or access levels change, the record updates and the audit trail captures who made the change and when. Nothing gets lost in a transition between facilities staff.</p>
+          <ul class="feat-bullet-list">
+            <li>Hardware specifications recorded per door</li>
+            <li>Access level and fob profile associations</li>
+            <li>Full change history with user and timestamp</li>
+            <li>Link doors to floor plan locations for visual reference</li>
+          </ul>
+          <a href="/signup?plan=starter" class="btn btn-navy">Start managing doors</a>
+        </div>
+        <div class="feat-image">
+          <div class="img-placeholder">
+            <div class="demo-ph-inner">
+              <div class="demo-ph-sidebar">
+                <div class="demo-ph-logo"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav active"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+              </div>
+              <div class="demo-ph-body">
+                <div class="demo-ph-heading"></div>
+                <div class="demo-ph-cards">
+                  <div class="demo-ph-card gold"></div>
+                  <div class="demo-ph-card"></div>
+                  <div class="demo-ph-card"></div>
+                  <div class="demo-ph-card"></div>
+                </div>
+                <div class="demo-ph-rows mt">
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                  <div class="demo-ph-row"></div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-ph-label">Door records view</div>
+            <span class="img-ph-tag">Demo image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · Fob Profiles — odd: text left, image right -->
+  <section class="feat-section" id="fobs">
+    <div class="section-inner">
+      <div class="feat-layout">
+        <div class="feat-text">
+          <div class="section-label">Fob Profiles</div>
+          <h2>Map access. Spot over-permission. Move fast.</h2>
+          <p>Access control systems grant permissions through profiles — bundles that determine which doors a credential can open and when. Without clear records of what each profile covers, access sprawl creeps in. People leave, but their profiles stay active.</p>
+          <p>KeyDog maps every fob profile to the doors, buildings, and zones it covers. When someone is issued a credential, their profile is logged. When they leave, you can see exactly what access they held and flag it for revocation — no guesswork, no missed doors.</p>
+          <p>This is especially valuable during compliance reviews or security incidents, when you need to answer "who had access to the server room in Q2" without pulling a legacy access control report and reconciling it against an HR spreadsheet.</p>
+          <ul class="feat-bullet-list">
+            <li>Profile-to-door mapping across buildings and zones</li>
+            <li>Assigned profiles per staff member, with issuance dates</li>
+            <li>Historical access records for compliance and audits</li>
+            <li>Cross-referenced with door management records</li>
+          </ul>
+          <a href="/signup?plan=campus" class="btn btn-navy">Get Campus plan</a>
+        </div>
+        <div class="feat-image">
+          <div class="img-placeholder">
+            <div class="demo-ph-inner">
+              <div class="demo-ph-sidebar">
+                <div class="demo-ph-logo"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav active"></div>
+                <div class="demo-ph-nav"></div>
+              </div>
+              <div class="demo-ph-body">
+                <div class="demo-ph-heading"></div>
+                <div class="demo-ph-form-row"></div>
+                <div class="demo-ph-form-row short"></div>
+                <div class="demo-ph-rows mt">
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                  <div class="demo-ph-row med"></div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-ph-label">Fob profile view</div>
+            <span class="img-ph-tag">Demo image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · Audit Trail — even: image left, text right -->
+  <section class="feat-section" id="audit">
+    <div class="section-inner">
+      <div class="feat-layout">
+        <div class="feat-text">
+          <div class="section-label">Audit Trail</div>
+          <h2>A log nobody can edit. Evidence you can trust.</h2>
+          <p>Regulators, insurers, and security teams all want the same thing: proof of who did what and when. A spreadsheet that anyone can edit doesn't qualify. KeyDog's audit trail does.</p>
+          <p>Every action in KeyDog — key issuances, door record changes, fob profile updates, login events, and admin changes — is written to an immutable log with the acting user's name, a timestamp, and a plain-language description of the change. No retroactive edits. No deletions.</p>
+          <p>Reporting tools let you filter the log by date range, user, action type, or specific record, then export the results as a CSV for external compliance tools or board reporting. Retention spans from 30 days on Starter to 5 years on Enterprise.</p>
+          <ul class="feat-bullet-list">
+            <li>Tamper-evident log for every system action</li>
+            <li>Filter by date, user, record, or action type</li>
+            <li>Export to CSV for compliance reporting</li>
+            <li>30-day to 5-year retention depending on plan</li>
+          </ul>
+          <a href="/pricing" class="btn btn-navy">Compare retention by plan</a>
+        </div>
+        <div class="feat-image">
+          <div class="img-placeholder">
+            <div class="demo-ph-inner">
+              <div class="demo-ph-sidebar">
+                <div class="demo-ph-logo"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav active"></div>
+              </div>
+              <div class="demo-ph-body">
+                <div class="demo-ph-heading"></div>
+                <div class="demo-ph-form-row" style="width:70%"></div>
+                <div class="demo-ph-rows mt">
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row med"></div>
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-ph-label">Audit log view</div>
+            <span class="img-ph-tag">Demo image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · Staff & Safe Management — odd: text left, image right -->
+  <section class="feat-section" id="staff">
+    <div class="section-inner">
+      <div class="feat-layout">
+        <div class="feat-text">
+          <div class="section-label">Staff &amp; Safe Management</div>
+          <h2>One record per person. Nothing left behind.</h2>
+          <p>Facilities teams manage more than keys. Safe combinations, system account credentials, door codes, and alarm PINs all need a secure home — one that isn't a Post-it note on the manager's monitor or a shared spreadsheet with no version history.</p>
+          <p>KeyDog stores safe combinations and system accounts with role-based access: only users with the right permission level can view or modify sensitive records. Every view and every edit is logged, so you always know who accessed what and when.</p>
+          <p>Staff records tie everything together. Each person has a record showing which keys they hold, which fob profiles they carry, and which safes they have access to. When someone leaves, a single staff record gives you an instant offboarding checklist — no cross-referencing multiple systems to figure out what to recover.</p>
+          <ul class="feat-bullet-list">
+            <li>Safe combination records with role-based access controls</li>
+            <li>System account and credential storage with audit logging</li>
+            <li>Staff records linked to keys, fob profiles, and safes</li>
+            <li>Instant offboarding view — see everything to recover at once</li>
+          </ul>
+          <a href="/signup?plan=starter" class="btn btn-navy">Get started</a>
+        </div>
+        <div class="feat-image">
+          <div class="img-placeholder">
+            <div class="demo-ph-inner">
+              <div class="demo-ph-sidebar">
+                <div class="demo-ph-logo"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav active"></div>
+              </div>
+              <div class="demo-ph-body">
+                <div class="demo-ph-heading"></div>
+                <div class="demo-ph-cards">
+                  <div class="demo-ph-card"></div>
+                  <div class="demo-ph-card gold"></div>
+                  <div class="demo-ph-card"></div>
+                  <div class="demo-ph-card"></div>
+                </div>
+                <div class="demo-ph-rows mt">
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row med"></div>
+                  <div class="demo-ph-row short"></div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-ph-label">Staff record view</div>
+            <span class="img-ph-tag">Demo image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · Key Agreements & Reports — even: image left, text right -->
+  <section class="feat-section" id="agreements">
+    <div class="section-inner">
+      <div class="feat-layout">
+        <div class="feat-text">
+          <div class="section-label">Key Agreements &amp; Reports</div>
+          <h2>Documentation that writes itself.</h2>
+          <p>When someone is issued a key, that issuance should be documented and acknowledged. Key agreements create a paper trail — the key holder confirms they've received the key and understand their responsibility to return it. Without this, disputes over lost keys have no foundation.</p>
+          <p>KeyDog generates PDF key agreements automatically at checkout. The recipient's name, the key details, the issue date, and the expected return date are all populated from existing records — no re-typing required. Completed agreements are stored against the key transaction and can be retrieved instantly during a review.</p>
+          <p>Reporting gives managers visibility across the whole inventory: overdue keys by building, active checkouts by staff member, transaction history for any date range, and summary exports for facilities reports, board meetings, or insurance requirements.</p>
+          <ul class="feat-bullet-list">
+            <li>Auto-generated PDF agreements populated at key issuance</li>
+            <li>Agreements stored and retrievable per key transaction</li>
+            <li>Overdue key reports with scheduled email delivery</li>
+            <li>Export transaction and audit data to CSV at any time</li>
+          </ul>
+          <a href="/signup?plan=campus" class="btn btn-navy">Get Campus plan</a>
+        </div>
+        <div class="feat-image">
+          <div class="img-placeholder">
+            <div class="demo-ph-inner">
+              <div class="demo-ph-sidebar">
+                <div class="demo-ph-logo"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav active"></div>
+                <div class="demo-ph-nav"></div>
+                <div class="demo-ph-nav"></div>
+              </div>
+              <div class="demo-ph-body">
+                <div class="demo-ph-heading"></div>
+                <div class="demo-ph-form-row"></div>
+                <div class="demo-ph-form-row short"></div>
+                <div class="demo-ph-form-row"></div>
+                <div class="demo-ph-rows mt">
+                  <div class="demo-ph-row"></div>
+                  <div class="demo-ph-row short"></div>
+                  <div class="demo-ph-row"></div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-ph-label">Reports &amp; agreements view</div>
+            <span class="img-ph-tag">Demo image</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /.feat-sections -->
+
+<!-- ── CTA ───────────────────────────────────────────────────────── -->
+<section class="cta-section">
+  <div class="section-inner cta-inner">
+    <h2>Ready to try KeyDog?</h2>
+    <p>Get set up in minutes. No IT ticket, no installation, no credit card required to start.</p>
+    <div class="cta-buttons">
+      <a href="/signup?plan=campus" class="btn btn-gold btn-lg">Start free trial</a>
+      <a href="/pricing" class="btn btn-outline-light btn-lg">See pricing</a>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

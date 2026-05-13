@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><%- include('partials/head') %></head>
+<body class="page-pricing">
+
+<%- include('partials/nav') %>
+
+<main>
+
+  <section class="page-hero page-hero-sm">
+    <div class="section-inner text-center">
+      <div class="section-label">Pricing</div>
+      <h1 class="page-hero-title">Simple, transparent plans</h1>
+      <p class="page-hero-sub">No hidden fees. No per-seat surprises. Cancel any time.</p>
+    </div>
+  </section>
+
+  <section class="pricing-full">
+    <div class="section-inner">
+
+      <% if (typeof error !== 'undefined' && error) { %>
+        <div class="alert alert-error">There was a problem starting checkout. Please try again.</div>
+      <% } %>
+
+      <div class="pricing-cards pricing-cards-lg">
+
+        <!-- Starter -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price">
+              <span class="price-amount">$49</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="plan-desc">One campus. Up to 3 admins. Core key and door tracking.</p>
+          </div>
+          <ul class="plan-features plan-features-full">
+            <li class="feat-yes">1 campus building</li>
+            <li class="feat-yes">3 admin users</li>
+            <li class="feat-yes">Physical key checkout &amp; recovery</li>
+            <li class="feat-yes">Door records &amp; fob profiles</li>
+            <li class="feat-yes">Staff &amp; safe management</li>
+            <li class="feat-yes">Audit log (30-day retention)</li>
+            <li class="feat-yes">Email overdue alerts</li>
+            <li class="feat-yes">CSV import &amp; export</li>
+            <li class="feat-no">Floor plan management</li>
+            <li class="feat-no">Key agreement workflows</li>
+            <li class="feat-no">Ring checkout system</li>
+            <li class="feat-no">Priority support</li>
+          </ul>
+          <a href="/signup?plan=starter" class="btn btn-navy btn-full">Start free trial</a>
+          <p class="plan-trial-note">14-day free trial &nbsp;·&nbsp; No credit card required</p>
+        </div>
+
+        <!-- Campus (featured) -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="plan-badge">Most popular</div>
+          <div class="plan-header">
+            <div class="plan-name">Campus</div>
+            <div class="plan-price">
+              <span class="price-amount">$149</span>
+              <span class="price-period">/month</span>
+            </div>
+            <p class="plan-desc">Multi-building teams that need the full workflow.</p>
+          </div>
+          <ul class="plan-features plan-features-full">
+            <li class="feat-yes">Up to 5 campus buildings</li>
+            <li class="feat-yes">Unlimited admin users</li>
+            <li class="feat-yes">Physical key checkout &amp; recovery</li>
+            <li class="feat-yes">Door records &amp; fob profiles</li>
+            <li class="feat-yes">Staff &amp; safe management</li>
+            <li class="feat-yes">Audit log (1-year retention)</li>
+            <li class="feat-yes">Email overdue alerts</li>
+            <li class="feat-yes">CSV import &amp; export</li>
+            <li class="feat-yes">Floor plan management</li>
+            <li class="feat-yes">Key agreement workflows</li>
+            <li class="feat-yes">Ring checkout system</li>
+            <li class="feat-yes">Priority support</li>
+          </ul>
+          <a href="/signup?plan=campus" class="btn btn-gold btn-full">Start free trial</a>
+          <p class="plan-trial-note">14-day free trial &nbsp;·&nbsp; No credit card required</p>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-name">Enterprise</div>
+            <div class="plan-price">
+              <span class="price-amount">Custom</span>
+            </div>
+            <p class="plan-desc">Dedicated instance for large or multi-institution deployments.</p>
+          </div>
+          <ul class="plan-features plan-features-full">
+            <li class="feat-yes">Unlimited campus buildings</li>
+            <li class="feat-yes">Unlimited admin users</li>
+            <li class="feat-yes">Everything in Campus plan</li>
+            <li class="feat-yes">Dedicated deployment (your data only)</li>
+            <li class="feat-yes">Custom subdomain</li>
+            <li class="feat-yes">SSO / SAML integration</li>
+            <li class="feat-yes">5-year audit retention</li>
+            <li class="feat-yes">Uptime SLA</li>
+            <li class="feat-yes">Dedicated onboarding &amp; support</li>
+            <li class="feat-yes">Custom integrations on request</li>
+          </ul>
+          <a href="/contact" class="btn btn-navy btn-full">Contact sales</a>
+          <p class="plan-trial-note">Tailored quote &nbsp;·&nbsp; Pilot period available</p>
+        </div>
+
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq">
+        <h2 class="faq-title">Frequently asked questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Do I need a credit card to try KeyDog?</h3>
+            <p>No. Every plan starts with a 14-day free trial. You only need to add a payment method when you're ready to keep using it.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What counts as a "campus building"?</h3>
+            <p>Any physical building you manage keys and doors for — dorms, academic buildings, rec centres, etc. Each one counts as one campus building in your plan.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I upgrade or downgrade my plan?</h3>
+            <p>Yes, at any time. Upgrades take effect immediately; downgrades apply at the end of your billing period.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Where is my data stored?</h3>
+            <p>KeyDog is self-hosted on our infrastructure (Coolify on dedicated servers). Enterprise customers get their own isolated deployment. Your data never mingles with other tenants'.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Is there a per-key or per-door limit?</h3>
+            <p>No hard limits. Track as many keys and doors as your campus needs.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How does cancellation work?</h3>
+            <p>Cancel any time from your billing portal. Your data export is available for 30 days after cancellation.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<%- include('partials/footer') %>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "keydog-site",
+  "version": "1.0.0",
+  "description": "KeyDog marketing website with Stripe billing and Coolify provisioning",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "stripe": "^14.21.0"
+  }
+}
