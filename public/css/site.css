@@ -150,6 +150,13 @@ img, svg { display: block; }
 }
 .btn-outline-light:hover { background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.55); }
 
+.btn-outline-navy {
+  background: transparent;
+  color: var(--navy);
+  border-color: rgba(13,31,60,.35);
+}
+.btn-outline-navy:hover { background: rgba(13,31,60,.06); border-color: var(--navy); }
+
 .btn-sm  { font-size: 0.85rem; padding: 8px 18px; }
 .btn-lg  { font-size: 1.05rem; padding: 14px 32px; border-radius: 12px; }
 .btn-full { width: 100%; }
@@ -580,6 +587,13 @@ img, svg { display: block; }
   flex-shrink: 0;
 }
 
+.demo-cta-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .demo-image-wrap { display: flex; align-items: center; }
 
 .demo-placeholder {
@@ -887,6 +901,15 @@ img, svg { display: block; }
   color: var(--text-muted);
   margin-top: 2rem;
 }
+
+.pricing-demo-note {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 2.5rem;
+}
+.pricing-demo-note a { color: var(--navy); font-weight: 500; }
+.pricing-demo-note a:hover { color: var(--gold); }
 
 /* ── FAQ ────────────────────────────────────────────────────────── */
 .faq { margin-top: 6rem; }
