@@ -90,32 +90,75 @@
             <li>Automated overdue alerts via email on a configurable schedule</li>
             <li>Full per-key transaction history with timestamps and user attribution</li>
           </ul>
-          <a href="/signup?plan=starter" class="btn btn-navy">Start tracking keys</a>
+          <a href="/contact" class="btn btn-navy">Contact sales</a>
         </div>
         <div class="feat-image">
-          <div class="img-placeholder">
-            <div class="demo-ph-inner">
-              <div class="demo-ph-sidebar">
-                <div class="demo-ph-logo"></div>
-                <div class="demo-ph-nav active"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
+          <div class="app-mock">
+            <div class="app-mock-bar">
+              <span class="am-dot am-dot-r"></span><span class="am-dot am-dot-y"></span><span class="am-dot am-dot-g"></span>
+              <span class="app-mock-bar-url">app.keydog.io · Keys</span>
+            </div>
+            <div class="am-inner">
+              <div class="am-sidebar">
+                <div class="am-sidebar-logo">Key<span>Dog</span></div>
+                <div class="am-nav">
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Staff
+                  </div>
+                  <div class="am-nav-item am-active">
+                    <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    Keys
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Doors
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>
+                    FOB Profiles
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit
+                  </div>
+                </div>
               </div>
-              <div class="demo-ph-body">
-                <div class="demo-ph-heading"></div>
-                <div class="demo-ph-form-row" style="width:55%"></div>
-                <div class="demo-ph-rows" style="margin-top:8px">
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
-                  <div class="demo-ph-row med"></div>
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
+              <div class="am-body">
+                <div class="am-topbar">
+                  <div>
+                    <div class="am-page-title">Physical Keys</div>
+                    <div class="am-page-sub">Riverside Community College</div>
+                  </div>
+                  <div class="am-btn-sm">+ Issue Key</div>
+                </div>
+                <div class="am-content">
+                  <div class="am-status-bar">
+                    <div class="am-status-pill am-active">All <strong>47</strong></div>
+                    <div class="am-status-pill">Active <strong>39</strong></div>
+                    <div class="am-status-pill">Overdue <strong>3</strong></div>
+                    <div class="am-status-pill">Lost <strong>1</strong></div>
+                    <div class="am-status-pill">Damaged <strong>2</strong></div>
+                  </div>
+                  <div class="am-card">
+                    <table class="am-tbl">
+                      <thead><tr><th>Stamp #</th><th>Type</th><th>Holder</th><th>Status</th><th>Due</th></tr></thead>
+                      <tbody>
+                        <tr><td class="am-link">K-0042</td><td>Master</td><td>Morrison J.</td><td><span class="am-tag am-tag-green">Active</span></td><td>2026-08-01</td></tr>
+                        <tr><td class="am-link">K-0087</td><td>Classroom</td><td>Patel R.</td><td><span class="am-tag am-tag-green">Active</span></td><td>2026-06-15</td></tr>
+                        <tr><td class="am-link">K-0023</td><td>Master</td><td>Nguyen D.</td><td><span class="am-tag am-tag-orange">Overdue</span></td><td class="am-danger">2025-12-01</td></tr>
+                        <tr><td class="am-link">K-0112</td><td>Classroom</td><td>Chen L.</td><td><span class="am-tag am-tag-green">Active</span></td><td>2026-06-15</td></tr>
+                        <tr><td class="am-link">K-0156</td><td>Master</td><td class="am-muted">—</td><td><span class="am-tag am-tag-red">Lost</span></td><td class="am-muted">—</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="demo-ph-label">Key checkout view</div>
-            <span class="img-ph-tag">Demo image</span>
           </div>
         </div>
       </div>
@@ -138,35 +181,68 @@
             <li>Full change history with user and timestamp</li>
             <li>Link doors to floor plan locations for visual reference</li>
           </ul>
-          <a href="/signup?plan=starter" class="btn btn-navy">Start managing doors</a>
+          <a href="/contact" class="btn btn-navy">Contact sales</a>
         </div>
         <div class="feat-image">
-          <div class="img-placeholder">
-            <div class="demo-ph-inner">
-              <div class="demo-ph-sidebar">
-                <div class="demo-ph-logo"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav active"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-              </div>
-              <div class="demo-ph-body">
-                <div class="demo-ph-heading"></div>
-                <div class="demo-ph-cards">
-                  <div class="demo-ph-card gold"></div>
-                  <div class="demo-ph-card"></div>
-                  <div class="demo-ph-card"></div>
-                  <div class="demo-ph-card"></div>
+          <div class="app-mock">
+            <div class="app-mock-bar">
+              <span class="am-dot am-dot-r"></span><span class="am-dot am-dot-y"></span><span class="am-dot am-dot-g"></span>
+              <span class="app-mock-bar-url">app.keydog.io · Doors</span>
+            </div>
+            <div class="am-inner">
+              <div class="am-sidebar">
+                <div class="am-sidebar-logo">Key<span>Dog</span></div>
+                <div class="am-nav">
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Staff
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    Keys
+                  </div>
+                  <div class="am-nav-item am-active">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Doors
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>
+                    FOB Profiles
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit
+                  </div>
                 </div>
-                <div class="demo-ph-rows mt">
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
-                  <div class="demo-ph-row"></div>
+              </div>
+              <div class="am-body">
+                <div class="am-topbar">
+                  <div>
+                    <div class="am-page-title">Doors</div>
+                    <div class="am-page-sub">Riverside Community College</div>
+                  </div>
+                  <div class="am-btn-sm">+ Add Door</div>
+                </div>
+                <div class="am-content">
+                  <div class="am-card">
+                    <table class="am-tbl">
+                      <thead><tr><th>Name</th><th>#</th><th>Building</th><th>Access</th><th>Keys</th></tr></thead>
+                      <tbody>
+                        <tr><td class="am-link">Main Entrance</td><td class="am-muted">D-001</td><td>Admin Bldg</td><td><span class="am-tag am-tag-blue">BOTH</span></td><td>3</td></tr>
+                        <tr><td class="am-link">Science Lab 101</td><td class="am-muted">D-045</td><td>Science Hall</td><td><span class="am-tag am-tag-outline">KEYED</span></td><td>2</td></tr>
+                        <tr><td class="am-link">Library Reference</td><td class="am-muted">D-067</td><td>Library</td><td><span class="am-tag am-tag-blue">BOTH</span></td><td>1</td></tr>
+                        <tr><td class="am-link">Server Room</td><td class="am-muted">D-023</td><td>Admin Bldg</td><td><span class="am-tag am-tag-purple">FOB</span></td><td>0</td></tr>
+                        <tr><td class="am-link">Workshop</td><td class="am-muted">D-088</td><td>Physical Plant</td><td><span class="am-tag am-tag-outline">KEYED</span></td><td>2</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="demo-ph-label">Door records view</div>
-            <span class="img-ph-tag">Demo image</span>
           </div>
         </div>
       </div>
@@ -189,32 +265,81 @@
             <li>Historical access records for compliance and audits</li>
             <li>Cross-referenced with door management records</li>
           </ul>
-          <a href="/signup?plan=campus" class="btn btn-navy">Get Campus plan</a>
+          <a href="/contact" class="btn btn-navy">Contact sales</a>
         </div>
         <div class="feat-image">
-          <div class="img-placeholder">
-            <div class="demo-ph-inner">
-              <div class="demo-ph-sidebar">
-                <div class="demo-ph-logo"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav active"></div>
-                <div class="demo-ph-nav"></div>
+          <div class="app-mock">
+            <div class="app-mock-bar">
+              <span class="am-dot am-dot-r"></span><span class="am-dot am-dot-y"></span><span class="am-dot am-dot-g"></span>
+              <span class="app-mock-bar-url">app.keydog.io · FOB Profiles</span>
+            </div>
+            <div class="am-inner">
+              <div class="am-sidebar">
+                <div class="am-sidebar-logo">Key<span>Dog</span></div>
+                <div class="am-nav">
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Staff
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    Keys
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Doors
+                  </div>
+                  <div class="am-nav-item am-active">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>
+                    FOB Profiles
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit
+                  </div>
+                </div>
               </div>
-              <div class="demo-ph-body">
-                <div class="demo-ph-heading"></div>
-                <div class="demo-ph-form-row"></div>
-                <div class="demo-ph-form-row short"></div>
-                <div class="demo-ph-rows mt">
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
-                  <div class="demo-ph-row med"></div>
+              <div class="am-body">
+                <div class="am-topbar">
+                  <div>
+                    <div class="am-page-title">FOB Profiles</div>
+                    <div class="am-page-sub">Riverside Community College</div>
+                  </div>
+                  <div class="am-btn-sm">+ New Profile</div>
+                </div>
+                <div class="am-content">
+                  <div class="am-card">
+                    <div class="am-card-hd">All profiles <span class="am-count-badge">5</span></div>
+                    <div class="am-fp-list">
+                      <div class="am-fp-row">
+                        <div><div class="am-fp-name">Faculty</div><div class="am-fp-meta">Main campus · keyrings R-07, R-12</div></div>
+                        <div style="display:flex;gap:4px"><span class="am-count-badge">2 rings</span><span class="am-count-badge">5 doors</span></div>
+                      </div>
+                      <div class="am-fp-row">
+                        <div><div class="am-fp-name">Administration</div><div class="am-fp-meta">Admin building · keyring R-01</div></div>
+                        <div style="display:flex;gap:4px"><span class="am-count-badge">1 ring</span><span class="am-count-badge">8 doors</span></div>
+                      </div>
+                      <div class="am-fp-row">
+                        <div><div class="am-fp-name">Maintenance</div><div class="am-fp-meta">All buildings · keyrings R-02, R-03, R-08</div></div>
+                        <div style="display:flex;gap:4px"><span class="am-count-badge">3 rings</span><span class="am-count-badge">12 doors</span></div>
+                      </div>
+                      <div class="am-fp-row">
+                        <div><div class="am-fp-name">Security</div><div class="am-fp-meta">Full access · keyrings R-01, R-04</div></div>
+                        <div style="display:flex;gap:4px"><span class="am-count-badge">2 rings</span><span class="am-count-badge">15 doors</span></div>
+                      </div>
+                      <div class="am-fp-row">
+                        <div><div class="am-fp-name">Student Resident</div><div class="am-fp-meta">Residential only · no keyrings</div></div>
+                        <div style="display:flex;gap:4px"><span class="am-count-badge">0 rings</span><span class="am-count-badge">3 doors</span></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="demo-ph-label">Fob profile view</div>
-            <span class="img-ph-tag">Demo image</span>
           </div>
         </div>
       </div>
@@ -240,30 +365,65 @@
           <a href="/pricing" class="btn btn-navy">Compare retention by plan</a>
         </div>
         <div class="feat-image">
-          <div class="img-placeholder">
-            <div class="demo-ph-inner">
-              <div class="demo-ph-sidebar">
-                <div class="demo-ph-logo"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav active"></div>
+          <div class="app-mock">
+            <div class="app-mock-bar">
+              <span class="am-dot am-dot-r"></span><span class="am-dot am-dot-y"></span><span class="am-dot am-dot-g"></span>
+              <span class="app-mock-bar-url">app.keydog.io · Audit</span>
+            </div>
+            <div class="am-inner">
+              <div class="am-sidebar">
+                <div class="am-sidebar-logo">Key<span>Dog</span></div>
+                <div class="am-nav">
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Staff
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    Keys
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Doors
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M16 10a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>
+                    FOB Profiles
+                  </div>
+                  <div class="am-nav-item am-active">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit
+                  </div>
+                </div>
               </div>
-              <div class="demo-ph-body">
-                <div class="demo-ph-heading"></div>
-                <div class="demo-ph-form-row" style="width:70%"></div>
-                <div class="demo-ph-rows mt">
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row med"></div>
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
+              <div class="am-body">
+                <div class="am-topbar">
+                  <div>
+                    <div class="am-page-title">Audit Trail</div>
+                    <div class="am-page-sub">Riverside Community College</div>
+                  </div>
+                  <div class="am-btn-sm">Export CSV</div>
+                </div>
+                <div class="am-content">
+                  <div class="am-card">
+                    <table class="am-tbl">
+                      <thead><tr><th>When</th><th>Action</th><th>Resource</th><th>Detail</th><th>By</th></tr></thead>
+                      <tbody>
+                        <tr><td class="am-muted">May 14 10:42</td><td><span class="am-tag am-tag-teal">ISSUE</span></td><td>Key K-0087</td><td>Patel, Ravi</td><td class="am-muted">j.morrison</td></tr>
+                        <tr><td class="am-muted">May 14 09:15</td><td><span class="am-tag am-tag-green">GRANT</span></td><td>Safe · Main Office</td><td>Williams, Sarah</td><td class="am-muted">admin</td></tr>
+                        <tr><td class="am-muted">May 13 16:31</td><td><span class="am-tag am-tag-red">REVOKE</span></td><td>FOB · Faculty</td><td>Thompson, Kevin</td><td class="am-muted">j.morrison</td></tr>
+                        <tr><td class="am-muted">May 13 14:07</td><td><span class="am-tag am-tag-teal">ISSUE</span></td><td>Key K-0112</td><td>Chen, Lisa</td><td class="am-muted">j.morrison</td></tr>
+                        <tr><td class="am-muted">May 12 09:02</td><td><span class="am-tag am-tag-red">REVOKE</span></td><td>Key K-0023</td><td>Nguyen, Daniel</td><td class="am-muted">admin</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="demo-ph-label">Audit log view</div>
-            <span class="img-ph-tag">Demo image</span>
           </div>
         </div>
       </div>
@@ -286,36 +446,68 @@
             <li>Staff records linked to keys, fob profiles, and safes</li>
             <li>Instant offboarding view — see everything to recover at once</li>
           </ul>
-          <a href="/signup?plan=starter" class="btn btn-navy">Get started</a>
+          <a href="/contact" class="btn btn-navy">Contact sales</a>
         </div>
         <div class="feat-image">
-          <div class="img-placeholder">
-            <div class="demo-ph-inner">
-              <div class="demo-ph-sidebar">
-                <div class="demo-ph-logo"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav active"></div>
-              </div>
-              <div class="demo-ph-body">
-                <div class="demo-ph-heading"></div>
-                <div class="demo-ph-cards">
-                  <div class="demo-ph-card"></div>
-                  <div class="demo-ph-card gold"></div>
-                  <div class="demo-ph-card"></div>
-                  <div class="demo-ph-card"></div>
+          <div class="app-mock">
+            <div class="app-mock-bar">
+              <span class="am-dot am-dot-r"></span><span class="am-dot am-dot-y"></span><span class="am-dot am-dot-g"></span>
+              <span class="app-mock-bar-url">app.keydog.io · Staff</span>
+            </div>
+            <div class="am-inner">
+              <div class="am-sidebar">
+                <div class="am-sidebar-logo">Key<span>Dog</span></div>
+                <div class="am-nav">
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="am-nav-item am-active">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Staff
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    Keys
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Doors
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="3"/></svg>
+                    Safes
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit
+                  </div>
                 </div>
-                <div class="demo-ph-rows mt">
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row med"></div>
-                  <div class="demo-ph-row short"></div>
+              </div>
+              <div class="am-body">
+                <div class="am-topbar">
+                  <div>
+                    <div class="am-page-title">Staff</div>
+                    <div class="am-page-sub">Riverside Community College</div>
+                  </div>
+                  <div class="am-btn-sm">+ Add Staff</div>
+                </div>
+                <div class="am-content">
+                  <div class="am-card">
+                    <table class="am-tbl">
+                      <thead><tr><th>Name</th><th>ID</th><th>Dept</th><th>Status</th></tr></thead>
+                      <tbody>
+                        <tr><td class="am-link">Morrison, Jennifer</td><td class="am-muted">FAC-001</td><td>Facilities</td><td><span class="am-tag am-tag-green">Active</span></td></tr>
+                        <tr><td class="am-link">Patel, Ravi</td><td class="am-muted">FAC-007</td><td>Facilities</td><td><span class="am-tag am-tag-green">Active</span></td></tr>
+                        <tr><td class="am-link">Chen, Lisa</td><td class="am-muted">ADM-003</td><td>Admin</td><td><span class="am-tag am-tag-green">Active</span></td></tr>
+                        <tr><td class="am-link">Nguyen, Daniel</td><td class="am-muted">SEC-002</td><td>Security</td><td><span class="am-tag am-tag-green">Active</span></td></tr>
+                        <tr><td class="am-link">Thompson, Kevin</td><td class="am-muted">FAC-012</td><td>Facilities</td><td><span class="am-tag am-tag-red">Terminated</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="demo-ph-label">Staff record view</div>
-            <span class="img-ph-tag">Demo image</span>
           </div>
         </div>
       </div>
@@ -338,32 +530,68 @@
             <li>Overdue key reports with scheduled email delivery</li>
             <li>Export transaction and audit data to CSV at any time</li>
           </ul>
-          <a href="/signup?plan=campus" class="btn btn-navy">Get Campus plan</a>
+          <a href="/contact" class="btn btn-navy">Contact sales</a>
         </div>
         <div class="feat-image">
-          <div class="img-placeholder">
-            <div class="demo-ph-inner">
-              <div class="demo-ph-sidebar">
-                <div class="demo-ph-logo"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav active"></div>
-                <div class="demo-ph-nav"></div>
-                <div class="demo-ph-nav"></div>
+          <div class="app-mock">
+            <div class="app-mock-bar">
+              <span class="am-dot am-dot-r"></span><span class="am-dot am-dot-y"></span><span class="am-dot am-dot-g"></span>
+              <span class="app-mock-bar-url">app.keydog.io · Agreements</span>
+            </div>
+            <div class="am-inner">
+              <div class="am-sidebar">
+                <div class="am-sidebar-logo">Key<span>Dog</span></div>
+                <div class="am-nav">
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    Dashboard
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                    Staff
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                    Keys
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    Doors
+                  </div>
+                  <div class="am-nav-item am-active">
+                    <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    Agreements
+                  </div>
+                  <div class="am-nav-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    Audit
+                  </div>
+                </div>
               </div>
-              <div class="demo-ph-body">
-                <div class="demo-ph-heading"></div>
-                <div class="demo-ph-form-row"></div>
-                <div class="demo-ph-form-row short"></div>
-                <div class="demo-ph-form-row"></div>
-                <div class="demo-ph-rows mt">
-                  <div class="demo-ph-row"></div>
-                  <div class="demo-ph-row short"></div>
-                  <div class="demo-ph-row"></div>
+              <div class="am-body">
+                <div class="am-topbar">
+                  <div>
+                    <div class="am-page-title">Key Agreements</div>
+                    <div class="am-page-sub">Riverside Community College</div>
+                  </div>
+                  <div class="am-btn-sm">Export CSV</div>
+                </div>
+                <div class="am-content">
+                  <div class="am-card">
+                    <table class="am-tbl">
+                      <thead><tr><th>Key</th><th>Holder</th><th>Issued</th><th>Due</th><th>PDF</th></tr></thead>
+                      <tbody>
+                        <tr><td class="am-link">K-0087</td><td>Patel R.</td><td>2026-01-15</td><td>2026-06-15</td><td><span class="am-tag am-tag-green">Signed</span></td></tr>
+                        <tr><td class="am-link">K-0112</td><td>Chen L.</td><td>2026-01-15</td><td>2026-06-15</td><td><span class="am-tag am-tag-green">Signed</span></td></tr>
+                        <tr><td class="am-link">K-0042</td><td>Morrison J.</td><td>2025-08-01</td><td>2026-08-01</td><td><span class="am-tag am-tag-green">Signed</span></td></tr>
+                        <tr><td class="am-link">K-0023</td><td>Nguyen D.</td><td>2025-06-01</td><td class="am-danger">2025-12-01</td><td><span class="am-tag am-tag-green">Signed</span></td></tr>
+                        <tr><td class="am-link">K-0098</td><td>Thompson K.</td><td>2024-09-01</td><td class="am-danger">2025-09-01</td><td><span class="am-tag am-tag-green">Signed</span></td></tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="demo-ph-label">Reports &amp; agreements view</div>
-            <span class="img-ph-tag">Demo image</span>
           </div>
         </div>
       </div>
@@ -376,9 +604,9 @@
 <section class="cta-section">
   <div class="section-inner cta-inner">
     <h2>Ready to try KeyDog?</h2>
-    <p>14-day free trial. System setup within 24 hours. We handle everything and send your login details by email.</p>
+    <p>14-day free trial. Account setup within 24 hours. We handle everything and send your login details by email.</p>
     <div class="cta-buttons">
-      <a href="/signup?plan=campus" class="btn btn-gold btn-lg">Start free trial</a>
+      <a href="/contact" class="btn btn-gold btn-lg">Contact sales</a>
       <a href="/pricing" class="btn btn-outline-light btn-lg">See pricing</a>
     </div>
   </div>
