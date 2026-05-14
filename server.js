@@ -4,6 +4,7 @@ const path = require('path');
 
 const checkoutRoutes = require('./routes/checkout');
 const webhookRoutes  = require('./routes/webhook');
+const { notifyInquiry } = require('./lib/notify');
 
 const app  = express();
 const PORT = process.env.PORT || 3100;
@@ -46,11 +47,23 @@ app.get('/features', (_req, res) =>
 app.get('/support', (_req, res) =>
   res.render('support', { title: 'Support — KeyDog' }));
 
-app.get('/sales', (_req, res) =>
-  res.render('sales', { title: 'Talk to Sales — KeyDog' }));
+app.get('/sales', (req, res) =>
+  res.render('sales', { title: 'Talk to Sales — KeyDog', sent: req.query.sent === '1' }));
 
-app.get('/contact', (_req, res) =>
-  res.render('contact', { title: 'Contact Sales — KeyDog' }));
+app.post('/sales', async (req, res) => {
+  const { name, email, org, size, message } = req.body;
+  await notifyInquiry({ source: 'sales', name, email, org, size, message });
+  res.redirect('/sales?sent=1');
+});
+
+app.get('/contact', (req, res) =>
+  res.render('contact', { title: 'Contact Sales — KeyDog', sent: req.query.sent === '1' }));
+
+app.post('/contact', async (req, res) => {
+  const { name, email, institution, buildings, message } = req.body;
+  await notifyInquiry({ source: 'contact', name, email, institution, buildings, message });
+  res.redirect('/contact?sent=1');
+});
 
 app.get('/success', (_req, res) =>
   res.render('success', { title: 'Welcome to KeyDog!' }));
