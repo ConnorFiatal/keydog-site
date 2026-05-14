@@ -63,6 +63,9 @@ app.get('/success', (_req, res) =>
 
 app.get('/cancel', (_req, res) => res.redirect(301, '/contact'));
 
+app.get('/terms',   (_req, res) => res.render('terms',   { title: 'Terms of Service — KeyDog' }));
+app.get('/privacy', (_req, res) => res.render('privacy', { title: 'Privacy Policy — KeyDog' }));
+
 app.use((_req, res) => res.status(404).render('404', { title: 'Page Not Found — KeyDog' }));
 
 app.listen(PORT, () => console.log(`KeyDog site → http://localhost:${PORT}`));

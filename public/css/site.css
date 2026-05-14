@@ -1372,6 +1372,48 @@ img, svg { display: block; }
   margin-bottom: 8px;
 }
 
+/* ── Legal pages (terms / privacy) ─────────────────────────────── */
+.legal-body {
+  background: var(--off-white);
+  padding: clamp(40px, 6vw, 80px) 0;
+}
+
+.legal-content {
+  max-width: 720px;
+  margin-inline: auto;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: clamp(32px, 5vw, 56px);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-light);
+}
+
+.legal-content h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.legal-content h2:first-child { margin-top: 0; }
+
+.legal-content p, .legal-content li {
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-bottom: 0.6rem;
+}
+
+.legal-content ul {
+  padding-left: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.legal-content a { color: var(--navy-600); }
+.legal-content a:hover { color: var(--gold); }
+
 /* ── Minimal page wrapper ───────────────────────────────────────── */
 .page-minimal body { background: var(--off-white); }
 

@@ -2,120 +2,14 @@
 <html lang="en">
 <head><%- include('partials/head') %></head>
 <body class="page-minimal">
-
 <%- include('partials/nav') %>
-
-<main class="checkout-flow">
-  <div class="checkout-wrap">
-
-    <div class="checkout-card">
-      <div class="checkout-back">
-        <a href="/pricing">&larr; Back to pricing</a>
-      </div>
-
-      <div class="checkout-plan-badge">
-        <span class="badge-plan">
-          <%= planData.name %> plan
-        </span>
-        <span class="badge-price">
-          <%= planData.price %><% if (planData.interval) { %>/<%= planData.interval %><% } %>
-        </span>
-      </div>
-
-      <h1 class="checkout-title">Start your free trial</h1>
-      <p class="checkout-sub">14 days free, then <%= planData.price %>/<%= planData.interval %> — cancel any time.</p>
-
-      <form action="/checkout/session" method="POST" class="checkout-form">
-        <input type="hidden" name="plan" value="<%= plan %>">
-
-        <div class="form-group">
-          <label for="company">Institution / organisation name</label>
-          <input
-            type="text"
-            id="company"
-            name="company"
-            placeholder="e.g. Riverside Community College"
-            required
-            autocomplete="organization"
-          >
-        </div>
-
-        <div class="form-group">
-          <label for="email">Work email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="you@university.edu"
-            required
-            autocomplete="email"
-          >
-        </div>
-
-        <button type="submit" class="btn btn-gold btn-full btn-lg">
-          Continue to payment &rarr;
-        </button>
-      </form>
-
-      <p class="checkout-legal">
-        By continuing you agree to our
-        <a href="/terms">Terms of Service</a> and <a href="/privacy">Privacy Policy</a>.
-        Payment is processed securely by Stripe.
-      </p>
-
-      <div class="checkout-trust">
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          Stripe-secured checkout
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-          14-day free trial
-        </div>
-        <div class="trust-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          Cancel any time
-        </div>
-      </div>
-    </div>
-
-    <div class="checkout-sidebar">
-      <h3>What you get on <%= planData.name %></h3>
-      <% if (plan === 'starter') { %>
-      <ul class="checkout-feature-list">
-        <li>1 campus building</li>
-        <li>Up to 3 admin users</li>
-        <li>Physical key tracking</li>
-        <li>Door records &amp; fob profiles</li>
-        <li>30-day audit log</li>
-        <li>CSV import &amp; export</li>
-        <li>Email overdue alerts</li>
-      </ul>
-      <% } else { %>
-      <ul class="checkout-feature-list">
-        <li>Up to 5 campus buildings</li>
-        <li>Unlimited admin users</li>
-        <li>Full key &amp; door tracking</li>
-        <li>Floor plan management</li>
-        <li>Key agreement workflows</li>
-        <li>Ring checkout system</li>
-        <li>1-year audit retention</li>
-        <li>Priority support</li>
-      </ul>
-      <% } %>
-
-      <div class="checkout-quote">
-        <blockquote>
-          "We used to spend half a day hunting down lost keys. KeyDog paid for itself in the first week."
-        </blockquote>
-        <cite>— Facilities Director, regional university</cite>
-      </div>
-    </div>
-
+<main class="status-page">
+  <div class="status-card">
+    <h1>Looking to get started?</h1>
+    <p class="status-lead">Contact our team and we'll have your account set up within 24 hours.</p>
+    <a href="/contact" class="btn btn-gold btn-lg">Contact sales</a>
   </div>
 </main>
-
 <%- include('partials/footer') %>
-
 </body>
 </html>
