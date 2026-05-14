@@ -11,11 +11,8 @@
     <div class="checkout-card">
       <div class="section-label">Enterprise &amp; Sales</div>
       <h1 class="checkout-title">Talk to the team</h1>
-      <p class="checkout-sub">Tell us about your institution and we'll put together a tailored quote.</p>
+      <p class="checkout-sub">Tell us about your institution and we'll put together a tailored quote. Your account will be ready within 24 hours of your request.</p>
 
-      <% if (sent) { %>
-        <p class="checkout-legal" style="font-size:1rem;color:var(--gold);">Message received — we'll be in touch within one business day.</p>
-      <% } else { %>
       <form action="/contact" method="POST" class="checkout-form">
         <div class="form-group">
           <label for="name">Your name</label>
@@ -45,9 +42,8 @@
         </div>
         <button type="submit" class="btn btn-gold btn-full btn-lg">Send message</button>
       </form>
-      <% } %>
 
-      <% if (!sent) { %><p class="checkout-legal">We'll get back to you within one business day.</p><% } %>
+      <p class="checkout-legal">We'll get back to you within one business day.</p>
     </div>
 
   </div>

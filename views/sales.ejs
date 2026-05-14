@@ -12,9 +12,6 @@
       <h1 class="checkout-title">Let's find the right fit</h1>
       <p class="checkout-sub">Tell us about your team and we'll walk you through the best plan — or build a custom quote for larger deployments.</p>
 
-      <% if (sent) { %>
-        <p class="checkout-legal" style="font-size:1rem;color:var(--gold);">Message received — we'll be in touch within one business day.</p>
-      <% } else { %>
       <form action="/sales" method="POST" class="checkout-form">
         <div class="form-group">
           <label for="name">Your name</label>
@@ -44,9 +41,8 @@
         </div>
         <button type="submit" class="btn btn-gold btn-full btn-lg">Send message</button>
       </form>
-      <% } %>
 
-      <% if (!sent) { %><p class="checkout-legal">We reply within one business day. No pitch decks, no pressure.</p><% } %>
+      <p class="checkout-legal">We reply within one business day. No pitch decks, no pressure.</p>
     </div>
   </div>
 </main>

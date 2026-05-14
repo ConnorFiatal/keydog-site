@@ -6,47 +6,50 @@
 <%- include('partials/nav') %>
 
 <main class="status-page">
-  <div class="status-card status-success">
+  <div class="status-card">
     <div class="status-icon status-icon-success">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <polyline points="20 6 9 17 4 12"/>
       </svg>
     </div>
 
-    <h1>You're in.</h1>
+    <h1>Request received.</h1>
     <p class="status-lead">
-      Your KeyDog instance is being provisioned. You'll receive an email with your login link and first-run instructions within a few minutes.
+      Thanks for reaching out. A member of our team will be in touch within one business day to discuss your setup and get your account configured.
     </p>
 
     <div class="status-steps">
       <div class="status-step status-step-done">
         <div class="step-dot"></div>
         <div class="step-body">
-          <strong>Payment confirmed</strong>
-          <span>Your subscription is active</span>
+          <strong>Request submitted</strong>
+          <span>We have your details</span>
         </div>
       </div>
       <div class="status-step status-step-active">
         <div class="step-dot"></div>
         <div class="step-body">
-          <strong>Instance deploying</strong>
-          <span>Your KeyDog environment is being configured</span>
+          <strong>Team review</strong>
+          <span>We'll confirm your plan and any questions within one business day</span>
         </div>
       </div>
       <div class="status-step">
         <div class="step-dot"></div>
         <div class="step-body">
-          <strong>Welcome email</strong>
-          <span>Login link and setup guide on the way</span>
+          <strong>Account setup</strong>
+          <span>Your KeyDog instance provisioned and login details sent by email within 24 hours</span>
         </div>
       </div>
     </div>
 
     <p class="status-note">
-      Questions? Email us at <a href="mailto:support@keydog.app">support@keydog.app</a>
+      Need to follow up? Email us at <a href="mailto:support@keydog.app">support@keydog.app</a>
     </p>
 
-    <a href="/" class="btn btn-ghost">Back to homepage</a>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:8px">
+      <a href="https://demo.keydog.io" target="_blank" rel="noopener" class="btn btn-gold">Try live demo</a>
+      <a href="/" class="btn btn-ghost">Back to homepage</a>
+    </div>
   </div>
 </main>
 
