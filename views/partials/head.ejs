@@ -1,7 +1,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><%= title %></title>
-<meta name="description" content="KeyDog — modern campus key, door, and access credential management for higher education.">
+<meta name="description" content="<%= locals.description || 'KeyDog — modern campus key, door, and access credential management for higher education.' %>">
+<% if (locals.noindex) { %><meta name="robots" content="noindex,nofollow">
+<% } %>
+<link rel="canonical" href="<%= locals.canonical || baseUrl %>">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KeyDog">
+<meta property="og:title" content="<%= title %>">
+<meta property="og:description" content="<%= locals.description || 'KeyDog — modern campus key, door, and access credential management for higher education.' %>">
+<meta property="og:url" content="<%= locals.canonical || baseUrl %>">
+<meta property="og:image" content="<%= baseUrl %>/img/og.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<%= title %>">
+<meta name="twitter:description" content="<%= locals.description || 'KeyDog — modern campus key, door, and access credential management for higher education.' %>">
+<meta name="twitter:image" content="<%= baseUrl %>/img/og.png">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">

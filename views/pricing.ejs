@@ -1,6 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><%- include('partials/head') %></head>
+<head>
+<%- include('partials/head') %>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does the free trial work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every plan starts with a 14-day free trial. Contact our team and your account will be set up within 24 hours — you'll receive login details by email. No payment details needed to get started."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What counts as a campus building?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any physical building you manage keys and doors for — dorms, academic buildings, rec centres, etc. Each one counts as one campus building in your plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I upgrade or downgrade my plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, at any time. Contact us and we'll handle the change. Upgrades take effect immediately; downgrades apply at the end of your billing period."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is my data stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your data is stored on our managed infrastructure in isolated, private databases. Enterprise customers get a fully dedicated environment — no shared resources. Your data never mingles with other tenants'."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a per-key or per-door limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hard limits. Track as many keys and doors as your campus needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does cancellation work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancel any time by contacting us. Your data export is available for 30 days after cancellation."
+      }
+    }
+  ]
+}
+</script>
+</head>
 <body class="page-pricing">
 
 <%- include('partials/nav') %>

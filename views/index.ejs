@@ -1,6 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><%- include('partials/head') %></head>
+<head>
+<%- include('partials/head') %>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "<%= baseUrl %>/#organization",
+      "name": "KeyDog",
+      "url": "<%= baseUrl %>",
+      "description": "Campus key, door, and access credential management for higher education and institutional facilities teams.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@keydog.app"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "KeyDog",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "<%= baseUrl %>",
+      "description": "Physical key tracking, door management, and access credential control for campus facilities teams.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter",
+          "price": "49",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Campus",
+          "price": "149",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "149",
+            "priceCurrency": "USD",
+            "billingDuration": "P1M"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
 <body>
 
 <%- include('partials/nav') %>
