@@ -911,6 +911,108 @@ img, svg { display: block; }
 .pricing-demo-note a { color: var(--navy); font-weight: 500; }
 .pricing-demo-note a:hover { color: var(--gold); }
 
+/* ── Add-ons ─────────────────────────────────────────────────────── */
+.addons-section {
+  margin-top: 5rem;
+}
+
+.addons-title {
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+}
+
+.addons-intro {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.addons-group {
+  margin-bottom: 2.5rem;
+}
+
+.addons-group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.addons-group-label {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.addons-group-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--navy);
+  color: var(--white);
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+
+.addons-group-desc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.addons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 640px) {
+  .addons-grid { grid-template-columns: 1fr; }
+}
+
+.addon-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.addon-info { flex: 1; }
+
+.addon-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 3px;
+}
+
+.addon-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.addon-price {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--gold);
+  white-space: nowrap;
+  text-align: right;
+}
+
+.addon-unit {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
 /* ── FAQ ────────────────────────────────────────────────────────── */
 .faq { margin-top: 6rem; }
 
